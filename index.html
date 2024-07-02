@@ -1,46 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Bruno Gomes - DevOps & Cloud</title>
+    <title>Bruno Gomes - DevOps Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <button class="toggle-button" id="toggle-button">
+        <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+    </button>
     <header>
         <h1>Bruno Gomes</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#experience">Experiência</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+        <h2>DevOps Cloud</h2>    
+    <section class="icons">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <i class="fab fa-linux"></i>
+                    <i class="fab fa-microsoft"></i>
+                    <i class="fas fa-terminal"></i>
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-azure"></i>
+                </div>
+                <div class="carousel-item">
+                    <i class="fab fa-docker"></i>
+                    <i class="fab fa-kubernetes"></i>
+                    <i class="fab fa-git"></i>
+                    <i class="fas fa-cloud"></i>
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <div class="carousel-item">
+                    <i class="fas fa-code"></i>
+                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-terminal"></i>
+                    <i class="fas fa-code-branch"></i>
+                    <i class="fas fa-desktop"></i>
+                </div>
+            </div>
+        </div>
+    </section>
     </header>
 
-    <section id="about">
-        <h2>Sobre Mim</h2>
-        <p>Seu texto sobre você e suas habilidades em DevOps e Cloud.</p>
+    <section class="about">
+            <div>
+                Especialista SysAdmin com ampla experiência em projetos de migração de infraestrutura completa. Tenho expertise na
+                reestruturação de SharePoint e na migração de Intranet no Microsoft 365. Minhas habilidades incluem administração de
+                bancos de dados SQL e NoSQL, deployment de hosts Linux, controle de versão com Git, e implementação de
+                Infraestrutura
+                como Código (IaC) utilizando Terraform e Ansible. Sou proficiente em CI/CD com GitHub Actions e Azure DevOps, além
+                de
+                ter conhecimentos avançados em contêineres Docker e Kubernetes. Também me destaco no desenvolvimento com
+                PowerPlatform e
+                na automação de processos com PowerAutomate, contribuindo significativamente para a automação e eficiência
+                operacional
+                em meus projetos.
+            </div>
     </section>
 
-    <section id="experience">
-        <h2>Experiência</h2>
-        <p>Sua experiência profissional relevante, destacando projetos em DevOps e Cloud.</p>
+    <section class="skills">        
+        <h2>Skills and Tools</h2>
+        <div class="skills-list">
+            <div>
+                <i class="fas fa-tools"></i><strong>DevOps Tools and Technologies:</strong> Jenkins, Git, Docker,
+                Kubernetes, Ansible, Terraform, Puppet, Chef, AWS, Azure, GCP
+            </div>
+            <div>
+                <i class="fas fa-sync-alt"></i><strong>CI/CD:</strong> Building pipelines, automating testing and
+                deployment processes
+            </div>
+            <div>
+                <i class="fas fa-code"></i><strong>Infrastructure Automation:</strong> Infrastructure as Code (IaC),
+                Configuration Management, Infrastructure Provisioning
+            </div>
+            <div>
+                <i class="fas fa-cloud"></i><strong>Cloud Technologies:</strong> AWS, Azure, GCP, Cloud Oracle,
+                Infrastructure Orchestration, Serverless Computing
+            </div>
+            <div>
+                <i class="fas fa-chart-line"></i><strong>Monitoring and Logging:</strong> Prometheus, Grafana
+            </div>
+            <div>
+                <i class="fas fa-terminal"></i><strong>Scripting and Programming Languages:</strong> Python, Bash,
+                PowerShell, VB, React, SQL
+            </div>
+            <div>
+                <i class="fas fa-code-branch"></i><strong>Version Control Systems:</strong> Git, SVN
+            </div>
+            <div>
+                <i class="fas fa-desktop"></i><strong>Operating Systems:</strong> Linux, Windows
+            </div>
+            <div>
+                <i class="fas fa-users"></i><strong>Collaboration and Communication:</strong> Agile, Scrum, Jira,
+                Confluence
+            </div>
+        </div>
     </section>
-
-    <section id="projects">
-        <h2>Projetos</h2>
-        <p>Descrição de projetos notáveis relacionados a DevOps e Cloud.</p>
+    <section class="repositories">
+        <div class="repository" data-repo="pobruno/m365-project-lifecycle">
+            <a href="https://github.com/pobruno/m365-project-lifecycle" target="_blank">Loading...</a>
+        </div>
+        <div class="repository" data-repo="pobruno/AutomatedOutlookSignature">
+            <a href="https://github.com/pobruno/AutomatedOutlookSignature" target="_blank">Loading...</a>
+        </div>
+        <div class="repository" data-repo="pobruno/iac-terraform-sharegate">
+            <a href="https://github.com/pobruno/iac-terraform-sharegate" target="_blank">Loading...</a>
+        </div>
     </section>
-
-    <section id="contact">
-        <h2>Contato</h2>
-        <p>Informações para contato.</p>
-    </section>
-
     <footer>
-        <p>&copy; 2024 Bruno Gomes. Todos os direitos reservados.</p>
+        <p>Contact: <a href="mailto:brunopoleza@outlook.com.br">brunopoleza@outlook.com.br</a></p>
+        <p><a href="https://www.linkedin.com/in/brunopoleza">LinkedIn</a> | <a
+                href="https://github.com/pobruno">GitHub</a> | <a href="https://poleza.me">Portfolio</a></p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
+
 </html>

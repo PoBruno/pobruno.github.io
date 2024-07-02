@@ -1,46 +1,230 @@
 /* Estilos básicos */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.about {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px;
+    text-align: justify;
+}
+
+.about div {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilos para o texto dentro da seção About */
+.about p {
+    margin-bottom: 15px;
+}
+
+/* Estilos para a largura máxima do conteúdo */
+.about .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skills h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #bbb;
+    /* Cor original */
+}
+
+.light-mode .skills h2 {
+    color: #333;
+    /* Nova cor para o tema claro */
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #bbb;
+}
+
+.icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.icons h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.skills {
+    text-align: center;
+    margin: 20px 0;
+    width: 80%;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
+.skills h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
 }
 
-nav ul li a {
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     color: #fff;
-    text-decoration: none;
+    /* Texto branco no tema escuro */
 }
 
-section {
-    padding: 2rem;
-    background: #fff;
-    margin: 2rem 0;
+.skills-list div {
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.skills-list div:hover {
+    transform: scale(1.05);
+}
+
+.skills-list div i {
+    margin-right: 10px;
+    color: #1e90ff;
+}
+
+.repositories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 40px 0;
+}
+
+.repository {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.repository:hover {
+    transform: scale(1.05);
+}
+
+.repository a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.repository a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    margin: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #bbb;
+}
+
+footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.toggle-button {
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    top: 20px;
+    right: 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #1c7ece;
+}
+
+/* Tema Claro */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.light-mode header,
+.light-mode .icons,
+.light-mode .skills,
+.light-mode .repositories,
+.light-mode footer {
+    color: #000;
+    /* Texto preto no tema claro */
+}
+
+.light-mode .skills-list div,
+.light-mode .repository {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.light-mode .toggle-button {
+    background-color: #333;
+    color: #fff;
 }
