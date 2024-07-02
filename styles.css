@@ -23,10 +23,10 @@ header h1 {
 }
 
 .about {
-    background-color: #1a1a1a;
-    color: #ffffff;
     padding: 50px;
     text-align: justify;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transição suave para mudança de tema */
 }
 
 .about div {
@@ -47,6 +47,14 @@ header h1 {
     margin: 0 auto;
     padding: 20px;
 }
+
+/* Estilos específicos para o tema escuro */
+.light-mode .about {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+
 
 .skills h2 {
     font-size: 1.8em;
